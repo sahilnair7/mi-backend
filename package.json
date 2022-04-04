@@ -1,0 +1,35 @@
+{
+  "name": "mi-backend",
+  "version": "1.0.0",
+  "description": "",
+  "nodemonConfig": {
+    "watch": [
+      "app"
+    ],
+    "ext": "hbs",
+    "ignore": [
+      "*.test.ts"
+    ],
+    "delay": "3",
+    "execMap": {
+      "hbs": "hbs-node"
+    }
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,css,html,hbs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
